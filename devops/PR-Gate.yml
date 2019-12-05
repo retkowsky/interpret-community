@@ -1,5 +1,5 @@
 trigger: none
-pr: 
+pr:
   - master
 
 pool:
@@ -34,6 +34,7 @@ steps:
   - bash: |
       source activate interp
       pip install -e ./python
+      pip install papermill
     displayName: Install interpret-extensions
 
   - bash: |
