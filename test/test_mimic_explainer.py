@@ -19,7 +19,7 @@ from datasets import retrieve_dataset
 from constants import owner_email_tools_and_ux
 
 test_logger = logging.getLogger(__name__)
-test_logger.setLevel(logging.DEBUG)
+test_logger.setLevel(logging.INFO)
 
 LGBM_MODEL_IDX = 0
 SGD_MODEL_IDX = 2
