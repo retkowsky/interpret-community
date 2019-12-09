@@ -33,7 +33,7 @@ steps:
       source activate interp
       pip install -e ./python
       pip install papermill
-      pip install scrabook
+      pip install scrapbook
     displayName: Install interpret-extensions
 
   - bash: |
@@ -63,7 +63,6 @@ steps:
 
   - bash: |
       source activate interp
-      pip install scrapbook && \
       python -m pytest test/test_notebooks.py --junitxml=./TEST-TEST.xml
     displayName: "Run tests"
 
