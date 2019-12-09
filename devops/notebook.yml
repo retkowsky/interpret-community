@@ -63,6 +63,7 @@ steps:
 
   - bash: |
       source activate interp
+      pip install scrapbook && \
       python -m pytest test/test_notebooks.py --junitxml=./TEST-TEST.xml
     displayName: "Run tests"
 
